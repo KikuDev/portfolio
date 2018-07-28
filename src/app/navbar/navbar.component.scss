@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+ul {
+    left: 16%;
+    line-height: 10vh;
+    list-style-type: none;
+    padding: 0px;
+	position: absolute;
+    text-align: center;
+    top: 37%;
+    transform: translateX(-50%);
+    width: 25%;
+	li a {
+		animation: show 500ms forwards ease-out;
+		color: #ffffff;
+		cursor: pointer;
+		font-family: 'Cinzel', serif;
+		opacity: 0;
+		text-decoration: none;
+		&.active-link {
+			text-decoration: underline;
+			text-underline-position: under;
+		}
+		@keyframes show {
+			100% {
+				opacity: 1;
+			}
+		}
+	}
+}

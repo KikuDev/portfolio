@@ -1,0 +1,16 @@
+<div class="name" *ngIf="showName">
+  <span>Bizet Grégory</span>
+  <span class="job" [class.jobDisplayed]="showJob">Front-End Developper</span>
+</div>
+
+<div class="background" *ngIf="showName"></div>
+
+
+<div class="preload" *ngIf="!showName">
+    <div class="name1" [class.clicked]="entered" (click)="enter()">
+    <span *ngIf="!showName">
+        <span class="letters letter-{{i}}" *ngFor="let letter of letters; let i = index">{{ letter }}</span>
+    </span>
+  </div>
+</div>
+  
