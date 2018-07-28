@@ -9,13 +9,16 @@ import { disappear } from '../animation';
 })
 export class PresentationComponent implements OnInit {
   @HostBinding('@routeAnimation') routeAnimation = true;
+  img:string = '../../assets/img/me.jpg';
 
-  constructor() { }
+  constructor() {
+   }
+
 
   ngOnInit() {
     setTimeout(() => {
       document.getElementsByClassName('flipcard')[0].classList.toggle('flip');      
-    }, 50);
+    }, 10);
   }
 
 }

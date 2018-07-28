@@ -1,5 +1,29 @@
 @import '../flip-cards.scss';
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 .back {
 	box-shadow: 0px 0px 10px -3px black;
+	padding: 5%;
+}
+
+.my-pretty-face {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px -4px black;
+    left: 50%;
+    position: absolute;
+    top: -15%;
+    transform: translateX(-50%);
+	width: 25%;
+}
+
+.title {
+	font-family: 'Cinzel', serif;
+	font-size: 1.1vw;
+	margin-top: 13%;
+	text-align: center;
+}
+
+.text {
+	font-family: 'Cinzel', serif;
+	font-size: 1vw;
 }
