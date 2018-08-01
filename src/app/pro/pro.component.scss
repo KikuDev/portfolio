@@ -4,7 +4,10 @@
 
 
 .back {
+	align-items: center;
 	border: 2px solid $theme-color;
+	display: flex;
+	justify-content: center;
 	padding: 0%;
 	position: relative;
 	transition: 200ms;
@@ -29,6 +32,9 @@
 			position: absolute;
 		}
 	}
+	img {
+		width: 70%;
+	}
 }
 
 .flipcard {
@@ -46,17 +52,23 @@
     position: absolute;
     right: 7%;
 	box-shadow: 0px 0px 5px -2px black;
-	transition: 1000ms;
+	transition: 800ms cubic-bezier(.86,0,.05,1);
 	&.enlarged {
-		transform: translateY(-50%) scale(5);
+		transform: translate(70%, -50%) scale(5);
+	}
+	&.enlarged2 {
+		transform: translate(70%, -50%) scale(5);
+	}
+	&.enlarged3 {
+		transform: translate(-170%, -50%) scale(5);
+	}
+	&.enlarged4 {
+		transform: translate(-170%, -50%) scale(5);
 	}
 }
 
 .job {
-	transition: 1000ms;
-	&.enlarged {
-		transform: translateY(14%) translateX(-35%) scale(5);
-	}
+	transition: 800ms cubic-bezier(.86,0,.05,1);
 }
 
 .job- {
@@ -65,30 +77,69 @@
 		height: 30%;
 		top: 31%;
 		right: 33%;
+		&.enlarged {
+			transform: translateY(14%) translateX(-35%) scale(5);
+		}
+		&.reduce2 {
+			transform: translateY(-550%) translateX(-35%) scale(5);
+		}
+		&.reduce3 {
+			transform: translateY(-550%) translateX(-600%) scale(5);
+		}
+		&.reduce4 {
+			transform: translateY(20%) translateX(-600%) scale(5);
+		}
 	}
 	&2 {
 		width: 20%;
 		height: 30%;
 		top: 66%;
 		right: 33%;
+		&.enlarged {
+			transform: translateY(-103%) translateX(-35%) scale(5);
+		}
 		&.reduce {
 			transform: translateY(450%) translateX(-35%) scale(5);
+		}
+		&.reduce3 {
+			transform: translateY(-100%) translateX(-600%) scale(5);
+		}
+		&.reduce4 {
+			transform: translateY(450%) translateX(-600%) scale(5);
 		}
 	}
 	&3 {
 		width: 20%;
 		height: 30%;
 		top: 66%;
+		&.enlarged {
+			transform: translateY(-103%) translateX(-150%) scale(5);
+		}
 		&.reduce {
 			transform: translateY(450%) translateX(400%) scale(5);
+		}
+		&.reduce2 {
+			transform: translateY(-100%) translateX(400%) scale(5);
+		}
+		&.reduce4 {
+			transform: translateY(450%) translateX(-150%) scale(5);
 		}
 	}
 	&4 {
 		width: 20%;
 		height: 30%;
 		top: 31%;
+		&.enlarged {
+			transform: translateY(14%) translateX(-150%) scale(5);
+		}
 		&.reduce {
 			transform: translateY(20%) translateX(400%) scale(5);
+		}
+		&.reduce2 {
+			transform: translateY(-550%) translateX(400%) scale(5);
+		}
+		&.reduce3 {
+			transform: translateY(-550%) translateX(-150%) scale(5);
 		}
 	}
 }

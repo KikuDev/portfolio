@@ -11,6 +11,7 @@ import { ProComponent } from './pro/pro.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { PersosComponent } from './persos/persos.component';
 import { AdminInterfaceComponent } from './admin-interface/admin-interface.component';
+import { ZoomDirective } from './zoom.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AdminInterfaceComponent } from './admin-interface/admin-interface.compo
     ProComponent,
     PresentationComponent,
     PersosComponent,
-    AdminInterfaceComponent
+    AdminInterfaceComponent,
+    ZoomDirective
   ],
   imports: [
     BrowserModule,

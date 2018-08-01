@@ -10,7 +10,7 @@ ul {
     text-align: center;
     top: 52%;
 	transform: translate(-50%, -50%);
-	transition: 1000ms;
+	transition: 800ms cubic-bezier(.86,0,.05,1);
     width: 25%;
 	li a {
 		animation: show 500ms forwards ease-out;
@@ -32,5 +32,14 @@ ul {
 	}
 	&.enlarged {
 		transform: translate(-800%, 200%) scale(5);
+	}
+	&.enlarged2 {
+		transform: translate(-800%, -200%) scale(5);
+	}
+	&.enlarged3 {
+		transform: translate(-1200%, -200%) scale(5);
+	}
+	&.enlarged4 {
+		transform: translate(-1200%, 200%) scale(5);
 	}
 }

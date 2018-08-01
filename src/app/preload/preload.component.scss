@@ -18,9 +18,18 @@ $letter-collection: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11
     background-color: $theme-color;
     padding: 1% 0;
 	transform: translateY(-50%);
-	transition: 1000ms;
+	transition: 800ms cubic-bezier(.86,0,.05,1);
 	z-index: 0;
 	&.enlarged {
+		transform: translateY(-50%) scale(5);
+	}
+	&.enlarged2 {
+		transform: translateY(-50%) scale(5);
+	}
+	&.enlarged3 {
+		transform: translateY(-50%) scale(5);
+	}
+	&.enlarged4 {
 		transform: translateY(-50%) scale(5);
 	}
 }
@@ -113,7 +122,7 @@ $letter-collection: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11
 	top: 14%;
 	left: 16%;
 	transform: translate(-50%, -50%);
-	transition: 1000ms;
+	transition: 800ms cubic-bezier(.86,0,.05,1);
 	width: 25%;
 	z-index: 999;
 
@@ -124,6 +133,15 @@ $letter-collection: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11
 	}
 	&.enlarged {
 		transform: translate(-800%, -1200%) scale(5);
+	}
+	&.enlarged2 {
+		transform: translate(-800%, -1400%) scale(5);
+	}
+	&.enlarged3 {
+		transform: translate(-1200%, -1500%) scale(5);
+	}
+	&.enlarged4 {
+		transform: translate(-1200%, -800%) scale(5);
 	}
 }
 

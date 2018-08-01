@@ -15,9 +15,6 @@ export class ProComponent implements OnInit {
 
   displayJob() {
     this.enlarged = !this.enlarged;
-    document.getElementsByClassName('background')[0].classList.toggle('enlarged');
-    document.getElementsByClassName('navbar')[0].classList.toggle('enlarged');
-    document.getElementsByClassName('name')[0].classList.toggle('enlarged');
   }
 
   ngOnInit() {

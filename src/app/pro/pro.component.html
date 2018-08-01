@@ -1,28 +1,32 @@
 <div class="jobs">
-  <div class="backgray" [class.enlarged]="enlarged"></div>
-  <div class="job job-1 flipcard h" [class.flip]="entered" [class.enlarged]="enlarged" (click)="displayJob()">
+  <div class="backgray"></div>
+  <div id="1" class="job job-1 flipcard h" appZoom [class.flip]="entered" (click)="displayJob()">
     <div class="back">
+      <img [src]="apolloLogo" alt="Apollo">
     </div>
     <div class="front"></div>
   </div>
   
   
-  <div class="job job-2 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+  <div id="2" class="job job-2 flipcard h" appZoom [class.flip]="entered">
     <div class="back">
+      <img [src]="apolloLogo" alt="Apollo">
     </div>
     <div class="front"></div>
   </div>
   
   
-  <div class="job job-3 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+  <div id="3" class="job job-3 flipcard h" appZoom [class.flip]="entered">
     <div class="back">
+      <img [src]="apolloLogo" alt="Apollo">
     </div>
     <div class="front"></div>
   </div>
   
   
-  <div class="job job-4 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+  <div id="4" class="job job-4 flipcard h" appZoom [class.flip]="entered">
     <div class="back">
+      <img [src]="apolloLogo" alt="Apollo">
     </div>
     <div class="front"></div>
   </div>
