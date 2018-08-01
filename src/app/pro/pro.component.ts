@@ -10,11 +10,26 @@ export class ProComponent implements OnInit {
   entered:boolean = false;
   enlarged:boolean = false;
 
-  constructor() {
-  }
+  jobs:Array<Object> = [
+    {
+      name: 'Apollo',
+      img: '../../assets/img/apollo-logo.svg'
+    },
+    {
+      name: 'Pearle',
+      img: '../../assets/img/apollo-logo.svg'
+    },
+    {
+      name: 'Casavox',
+      img: '../../assets/img/apollo-logo.svg'
+    },
+    {
+      name: 'Les Gourbaindises',
+      img: '../../assets/img/apollo-logo.svg'
+    }
+  ]
 
-  displayJob() {
-    this.enlarged = !this.enlarged;
+  constructor() {
   }
 
   ngOnInit() {

@@ -11,6 +11,7 @@ $letter-collection: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11
 }
 
 .background {
+	box-shadow: inset 0px 0px 100px -34px black;
 	position: absolute;
     top: 50%;
     width: 100%;
@@ -85,10 +86,12 @@ $letter-collection: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11
 		
 		@keyframes full {
 			70% {
+				box-shadow: inset 0px 0px 100px -34px black;
 				height: 100%;
 				width: 100%;
 			};
 			100% {
+				box-shadow: inset 0px 0px 100px -34px black;
 				height: 90%;
 				width: 100%;
 			}

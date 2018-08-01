@@ -1,33 +1,11 @@
 <div class="jobs">
   <div class="backgray"></div>
-  <div id="1" class="job job-1 flipcard h" appZoom [class.flip]="entered" (click)="displayJob()">
+  <div [id]="i + 1" *ngFor="let job of jobs; index as i" class="job job-{{i + 1}} flipcard h" appZoom [class.flip]="entered">
     <div class="back">
-      <img [src]="apolloLogo" alt="Apollo">
-    </div>
-    <div class="front"></div>
-  </div>
-  
-  
-  <div id="2" class="job job-2 flipcard h" appZoom [class.flip]="entered">
-    <div class="back">
-      <img [src]="apolloLogo" alt="Apollo">
-    </div>
-    <div class="front"></div>
-  </div>
-  
-  
-  <div id="3" class="job job-3 flipcard h" appZoom [class.flip]="entered">
-    <div class="back">
-      <img [src]="apolloLogo" alt="Apollo">
-    </div>
-    <div class="front"></div>
-  </div>
-  
-  
-  <div id="4" class="job job-4 flipcard h" appZoom [class.flip]="entered">
-    <div class="back">
-      <img [src]="apolloLogo" alt="Apollo">
-    </div>
+        <h1 class="job__name">
+          {{job.name}}
+        </h1>
+      </div>
     <div class="front"></div>
   </div>
 </div>
