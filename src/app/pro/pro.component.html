@@ -1,6 +1,30 @@
-
-<div class="topic">
-  <p>
-    pro works!
-  </p>
+<div class="jobs">
+  <div class="backgray" [class.enlarged]="enlarged"></div>
+  <div class="job job-1 flipcard h" [class.flip]="entered" [class.enlarged]="enlarged" (click)="displayJob()">
+    <div class="back">
+    </div>
+    <div class="front"></div>
+  </div>
+  
+  
+  <div class="job job-2 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+    <div class="back">
+    </div>
+    <div class="front"></div>
+  </div>
+  
+  
+  <div class="job job-3 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+    <div class="back">
+    </div>
+    <div class="front"></div>
+  </div>
+  
+  
+  <div class="job job-4 flipcard h" [class.flip]="entered" [class.reduce]="enlarged">
+    <div class="back">
+    </div>
+    <div class="front"></div>
+  </div>
 </div>
+

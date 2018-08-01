@@ -10,6 +10,7 @@ import { ViewsComponent } from './views/views.component';
 import { ProComponent } from './pro/pro.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { PersosComponent } from './persos/persos.component';
+import { AdminInterfaceComponent } from './admin-interface/admin-interface.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersosComponent } from './persos/persos.component';
     ViewsComponent,
     ProComponent,
     PresentationComponent,
-    PersosComponent
+    PersosComponent,
+    AdminInterfaceComponent
   ],
   imports: [
     BrowserModule,

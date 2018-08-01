@@ -10,6 +10,7 @@ import { disappear } from '../animation';
 export class PresentationComponent implements OnInit {
   @HostBinding('@routeAnimation') routeAnimation = true;
   img:string = '../../assets/img/me.jpg';
+  entered:boolean = false;
 
   constructor() {
    }
@@ -17,8 +18,8 @@ export class PresentationComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      document.getElementsByClassName('flipcard')[0].classList.toggle('flip');      
-    }, 10);
+      this.entered = true;
+   }, 10);
   }
 
 }

@@ -1,3 +1,4 @@
+@import '../variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
 ul {
@@ -8,13 +9,15 @@ ul {
 	position: absolute;
     text-align: center;
     top: 52%;
-    transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	transition: 1000ms;
     width: 25%;
 	li a {
 		animation: show 500ms forwards ease-out;
 		color: #ffffff;
 		cursor: pointer;
 		font-family: 'Cinzel', serif;
+		font-size: 1.3vw;
 		opacity: 0;
 		text-decoration: none;
 		&.active-link {
@@ -26,5 +29,8 @@ ul {
 				opacity: 1;
 			}
 		}
+	}
+	&.enlarged {
+		transform: translate(-800%, 200%) scale(5);
 	}
 }

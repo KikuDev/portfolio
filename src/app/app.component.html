@@ -1,5 +1,6 @@
-<app-preload (nameDisplayed)="display()"></app-preload>
-<div *ngIf="showNav">
+<app-preload class="hidden-sm-xs" (nameDisplayed)="display()"></app-preload>
+<div class="hidden-sm-xs" *ngIf="showNav">
 	<app-navbar></app-navbar>
 	<app-views ></app-views>
 </div>
+<app-admin-interface class="hidden-sm-xs"></app-admin-interface>	
