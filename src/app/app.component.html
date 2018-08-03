@@ -1,6 +1,18 @@
 <app-preload class="hidden-sm-xs" (nameDisplayed)="display()"></app-preload>
 <div class="hidden-sm-xs" *ngIf="showNav">
 	<app-navbar></app-navbar>
-	<app-views ></app-views>
+	<div [hidden]="!loading" class="loader">
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+			<h2>Loading...</h2>
+	</div>
+	<div [hidden]="loading" class="router-output">
+		<router-outlet></router-outlet>
+	</div>
 </div>
 <app-admin-interface class="hidden-sm-xs"></app-admin-interface>	

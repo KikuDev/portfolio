@@ -44,7 +44,6 @@ export class ProComponent implements OnInit {
   }
 
   closeProjectView(id) {
-    console.log(id);
     let element: HTMLElement = document.getElementsByClassName(`job-${id}`)[0] as HTMLElement;
     element.click();
     document.getElementsByClassName(`button${id}`)[0].classList.remove('displayed');
