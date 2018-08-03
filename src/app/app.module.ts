@@ -12,6 +12,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { PersosComponent } from './persos/persos.component';
 import { AdminInterfaceComponent } from './admin-interface/admin-interface.component';
 import { ZoomDirective } from './zoom.directive';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ZoomDirective } from './zoom.directive';
     PresentationComponent,
     PersosComponent,
     AdminInterfaceComponent,
-    ZoomDirective
+    ZoomDirective,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

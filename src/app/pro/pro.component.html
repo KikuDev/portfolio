@@ -1,12 +1,15 @@
 <div class="jobs">
   <div class="backgray"></div>
-  <div [id]="i + 1" *ngFor="let job of jobs; index as i" class="job job-{{i + 1}} flipcard h" appZoom [class.flip]="entered">
-    <div class="back">
-        <h1 class="job__name">
+  <div [id]="i + 1" *ngFor="let job of jobs; index as i" class="job job-{{i + 1}} flipcard h" appZoom [class.flip]="entered" [ngStyle]="{'box-shadow': shadow ? 'black 0px 0px 9px -2px' : 'none'}">
+    <div class="back back-{{i + 1}}">
+        <h1 class="job__name job__name--{{i + 1}}">
           {{job.name}}
         </h1>
-      </div>
+    </div>
     <div class="front"></div>
   </div>
 </div>
-
+<div *ngFor="let job of jobs; index as i" class="close-button button{{i + 1}}" (click)="closeProjectView(i + 1)">
+    <img [src]="closeButton" alt="close-button">
+</div>
+<app-project *ngFor="let job of jobs; index as i" [projectId]="i + 1"></app-project>

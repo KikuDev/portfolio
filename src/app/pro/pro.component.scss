@@ -5,22 +5,17 @@
 
 .back {
 	align-items: center;
+	background-color: white;
 	box-shadow: 0px 0px 10px -3px black;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	padding: 0%;
 	position: relative;
 	transition: 200ms;
-	&::after {
-		content: '';
-		transition: 200ms ease-in-out;
-		content: '';
-		width: 84%;
-		height: 85.5%;
-		border: 2px solid #fff;
-		left: 7%;
-		top: 6.5%;
-		position: absolute;
+	will-change: opacity;
+	&.goTransparent {
+		background-color: transparent !important;
 	}
 	img {
 		width: 70%;
@@ -34,8 +29,10 @@
 
 .flipcard {
 	border-radius: 4px;
+	overflow: hidden;
 	z-index: 10;
 	transition: 200ms;
+	will-change: transform, left, top, opacity;
 }
 
 .backgray {
@@ -49,6 +46,7 @@
     right: 7%;
 	box-shadow: 0px 0px 5px -2px black;
 	transition: 800ms cubic-bezier(.86,0,.05,1);
+	will-change: transform, left, top, opacity;
 	&.enlarged {
 		transform: translate(70%, -50%) scale(5);
 	}
@@ -66,6 +64,7 @@
 .job {
 	border-radius: 4px;
 	transition: 800ms cubic-bezier(.86,0,.05,1);
+	will-change: transform, left, top, opacity;
 	&__name {
 		align-items: center;
 		border-radius: 4px;
@@ -78,16 +77,21 @@
 		justify-content: center;
 		margin: 0;
 		text-align: center;
-		transition: 200ms ease-in-out;
+		transition: 400ms ease-in-out 200ms;
 		width: 100%;
+		z-index: 11;
+		&.slideDown {
+			transform: translateY(100%);
+		}
 	}
 }
 
+/*
 .job:hover .job__name {
 	border-radius: 0px;
 	height: 86%;
 	width: 85%;
-}
+} */
 
 .job- {
 	&1 {
@@ -170,4 +174,22 @@
 
 canvas {
 	z-index: 9999;
+}
+
+.close-button {
+	cursor: pointer;
+	width: 6.2vw;
+    height: 6.2vw;
+    position: absolute;
+    right: 3%;
+	top: 3%;
+	transform: scale(0);
+	transition: 200ms;
+	z-index: 9999999999999;
+	&.displayed {
+		transform: scale(1);
+	}
+	img {
+		width: 100%;
+	}
 }
